@@ -1,39 +1,12 @@
 /* Global */
-html {
-    scroll-behavior: smooth;
-}
 .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.7)
-}
-.hover-opacity{
-    transition:opacity .5;
-}
-.hover-opacity:hover{
-    opacity: .7;
-}
-.ltr{
-    position: relative;
-}
-.ltr:after{
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    top:0;
-    left:0;
-    background-color: #333; 
-}
-.ltr:hover:after{
-    width: 100%;
-    height: 100%;
-    transition: .5s;
-    z-index: -1;
-     }
+    background-color:rgba(1, 92, 104,0.5) ;
+} 
 body {
     font-family: 'varela round' , sans-serif;
    }
@@ -61,7 +34,6 @@ body {
      .section-header .line{
          width: 62px;
          height: 900px;
-         /* background-color: royalblue; */
         margin: 0  auto  70px  auto;
      }
 /* Header */
@@ -115,13 +87,6 @@ body {
     position: relative; 
     margin-bottom: 0.5px;
     padding-bottom: 0.5px;
-}
-.overlay{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color:rgba(1, 92, 104,0.5) ;
-
 }
 .home-content{
     width: 40%;
@@ -380,27 +345,26 @@ body {
 }
 /* Our Team//////////////////////////////////////////////////////////////////////////////////////////////////////// */
  /* Treatments */
-/* 3.3 PORTFOLIO SECTION....................................................................................... */
-.portfolio {
+.treatment {
     background-color: rgb(1, 92, 104 ,0.2);
     margin-top: 500px;}
-.portfolio-content {
+.treatment-content {
     overflow: hidden;
 }
-.portfolio-item{
+.treatment-item{
     width: 30%;
     float: left;
     margin-bottom: 20px;
     position: relative;
     padding:20px;
 }
-.portfolio-item img{
+.treatment-item img{
     width: 100%;
 }
-.portfolio-item.mg {
+.treatment-item.mg {
     margin: 0 5%;
 }
-.portfolio-item .layer-content{
+.treatment-item .layer-content{
     position: absolute;
     top:0;
     left:0;
@@ -414,7 +378,7 @@ body {
     visibility: hidden;
     transition:opacity 1s;
 }
-.portfolio-item:hover .layer-content{
+.treatment-item:hover .layer-content{
     opacity:1;
     visibility: visible;
 }
@@ -426,13 +390,14 @@ body {
    transform: translate(-50%,-50%);
    text-align: center;
 }
-.layer-content .category {
+.layer-content .teeth {
     color: #6195ff;
     text-transform: uppercase;
     display: block;
     margin-bottom: 5px;
     position: relative;
     top: 15px;
+    font-weight: 600;
     opacity: 0;
     visibility: hidden;
     transition: top 1s ,opacity .5s;
@@ -464,9 +429,9 @@ body {
 .layer-content a i{
     color: rgb(255, 255, 255);
 }
-.portfolio-item:hover .layer-content-title,
-.portfolio-item:hover .layer-content a,
-.portfolio-item:hover .layer-content .category{
+.treatment-item:hover .layer-content-title,
+.treatment-item:hover .layer-content a,
+.treatment-item:hover .layer-content .teeth{
    top:0;
    opacity: 1;
    visibility: visible;
